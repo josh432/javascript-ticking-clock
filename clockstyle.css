@@ -1,0 +1,43 @@
+html {
+	background: #018DED;;
+	font-family: 'helvetica neue';
+	text-align: center;
+	font-size: 10px;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	flex:1;
+}
+
+.clock{
+
+	width:30rem;
+	height:30rem;
+	border:1px solid white;
+	border-radius: 70%;
+	margin:2rem;
+	margin:0 auto;
+	position: relative;
+
+}
+
+.clockface {
+	width: 85%;
+	height:100%;
+	position:relative;
+	transform:translateY(6px);
+}
+
+.hand {
+	width:50%;
+	height: 1px;
+	background:black;
+	position: absolute;
+	top:50%;
+	left:10%;
+	transform-origin: 100%;
+	transform:rotate(90deg);
+	transition: all 0.05s;
+	transition-timing-function: linear;
+	transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
